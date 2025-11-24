@@ -1,0 +1,64 @@
+# .gitignore for Machine Learning Project
+
+# Data files
+data/raw/*.csv
+data/raw/*.zip
+data/processed/*.csv
+*.pkl
+*.joblib
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Models (可选，如果模型文件很大)
+models/*.pkl
+models/*.h5
+models/*.pt
+
+# Submissions (保留最终提交，删除测试提交)
+submissions/test_*.csv
+
+# Logs
+*.log

@@ -1,0 +1,10 @@
+{
+  "project_name": "奶牛产奶量预测",
+  "completion_date": "2025-11-18 22:29:29",
+  "best_model": "投票集成",
+  "best_val_rmse": 4.193618186621301,
+  "n_features_original": 34,
+  "n_features_engineered": 99,
+  "n_models_trained": 12,
+  "submission_file": "..\\submissions\\submission_voting_20251118_222919.csv"
+}
