@@ -132,12 +132,3 @@ The script will:
 
 - **Objective**: Predict `Milk_Yield_L` (milk production in liters)
 - **Metric**: RMSE (Root Mean Squared Error)
-- **Target Score**: Top 20% on leaderboard (< 4.16)
-
-## Author
-
-Fall 2025 Machine Learning Course Project
-
-## License
-
-This project is for educational purposes.
