@@ -124,9 +124,7 @@ The script will:
 | V5      | 4.1193  | 4.16787     | 0.048  | LightGBM added      |
 | V6      | 4.1186  | 4.16585     | 0.047  | 3-way interactions  |
 | V8      | 4.1205  | 4.16577     | 0.045  | Conservative tuning |
-| V9      | 4.1211  | TBD         | 0.043* | Multi-seed ensemble |
-
-*Expected based on gap reduction trend
+| V9      | 4.1211  | 4.16438     | 0.043  | Multi-seed ensemble |
 
 ## Competition Target
 
