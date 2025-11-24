@@ -6,11 +6,12 @@ This repository contains the implementation for a Kaggle competition focused on 
 
 ## Project Structure
 
-```
+```structure
 ├── data/                          # Dataset directory
 │   ├── raw/                       # Raw competition data
 │   └── processed/                 # Processed data files
 ├── notebooks/                     # Python scripts for model pipelines
+│   ├── improved_model.py          # Pipeline V1 - Baseline model
 │   ├── improved_pipeline_v2.py    # Pipeline V2 - Addressing overfitting
 │   ├── improved_pipeline_v3.py    # Pipeline V3 - Smart feature engineering
 │   ├── improved_pipeline_v4.py    # Pipeline V4 - Fix target encoding leakage
@@ -19,7 +20,6 @@ This repository contains the implementation for a Kaggle competition focused on 
 │   ├── improved_pipeline_v7.py    # Pipeline V7 - Ultra-regularization
 │   ├── improved_pipeline_v8.py    # Pipeline V8 - Conservative tuning
 │   ├── improved_pipeline_v9.py    # Pipeline V9 - Final optimized model ⭐
-│   ├── improved_model.py          # Strategy A+B implementation
 │   └── main_analysis.ipynb        # Exploratory data analysis notebook
 ├── models/                        # Saved model files
 ├── submissions/                   # Generated submission files
@@ -38,7 +38,6 @@ This repository contains the implementation for a Kaggle competition focused on 
 ### 1. Final Model Code
 - **Primary**: `notebooks/improved_pipeline_v9.py` - Best performing model (CV RMSE: ~4.1211)
 - **Alternative**: `Final_Model_V9.ipynb` - Jupyter notebook version
-- **Strategy Implementation**: `notebooks/improved_model.py` - Strategy A+B approach
 
 ### 2. Submission File
 - **Best Result**: `submissions/submission_v9_multiseed_20251123_234237.csv`
@@ -50,10 +49,6 @@ This repository contains the implementation for a Kaggle competition focused on 
   - Feature engineering strategies
   - Model selection and tuning
   - Results and evaluation
-
-### 4. Analysis
-- `main_analysis.ipynb` - Data exploration and feature analysis
-- `Competition Specification.md` - Competition details and requirements
 
 ## Model Evolution
 
@@ -118,13 +113,13 @@ The script will:
 
 ## Performance Summary
 
-| Version | CV RMSE | Submit RMSE | Gap    | Notes               |
-| ------- | ------- | ----------- | ------ | ------------------- |
-| V1      | 4.1271  | 4.17495     | 0.048  | Baseline            |
-| V5      | 4.1193  | 4.16787     | 0.048  | LightGBM added      |
-| V6      | 4.1186  | 4.16585     | 0.047  | 3-way interactions  |
-| V8      | 4.1205  | 4.16577     | 0.045  | Conservative tuning |
-| V9      | 4.1211  | 4.16438     | 0.043  | Multi-seed ensemble |
+| Version | CV RMSE | Submit RMSE | Gap   | Notes               |
+| ------- | ------- | ----------- | ----- | ------------------- |
+| V1      | 4.1271  | 4.17495     | 0.048 | Baseline            |
+| V5      | 4.1193  | 4.16787     | 0.048 | LightGBM added      |
+| V6      | 4.1186  | 4.16585     | 0.047 | 3-way interactions  |
+| V8      | 4.1205  | 4.16577     | 0.045 | Conservative tuning |
+| V9      | 4.1211  | 4.16438     | 0.043 | Multi-seed ensemble |
 
 ## Competition Target
 
